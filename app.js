@@ -4,10 +4,14 @@ console.log(typeof myName);
 let userName = prompt('Hi! What is your name, please?');
 console.log(userName);
 
-while (confirm("Are you 100% sure your name is "+ userName + '?') == false) {
+function confirmName(){
+    let nameCheck = confirm("Are you 100% sure your name is "+ userName + '?')
+while (!nameCheck) {
     userName = prompt('Hi! What is your name, please?');
     
-}
+} }
+
+confirmName()
 
 let welMsg = alert('Welcome to this page, ' + userName + '!');
 
@@ -34,3 +38,30 @@ function colorChange(){
         return document.body.style.backgroundColor = userColor}    
     } 
 
+//let n=0
+//let x=0
+//while (n<3){
+    //n++
+    //x+=n
+    //console.log(n)
+    //console.log(x)
+
+    //if (x>3) {
+        //break
+    //}
+//}
+function cats(){
+    let output = '';
+    let catCount = prompt("How many cats do you want?");
+    let printedNumber = catCount
+    for (let i=0; i<catCount; i++) {
+        output = '<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="superCat">'
+        document.write(output + printedNumber)
+        printedNumber -= 1
+    }
+    
+
+    //let catCount = prompt("How many cats do you want?");
+    //let catImage = '<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="superCat">'
+    //return document.write(catCount*catImage)
+ }

@@ -53,11 +53,11 @@ function colorChange(){
 function cats(){
     let output = '';
     let catCount = prompt("How many cats do you want?");
-    let printedNumber = catCount
-    for (let i=0; i<catCount-1; i++) {
+    let printedNumber = 1
+    for (let i=0; i<catCount; i++) {
         output = '<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="superCat">'
         document.write(output + printedNumber)
-        printedNumber -= 1
+        printedNumber += 1
     }
     
 

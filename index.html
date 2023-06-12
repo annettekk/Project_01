@@ -8,25 +8,148 @@
     <meta name = 'description' content="This is Anna's website"/>
     <link rel = 'stylesheet' href = 'reset.css'/>
     <link rel = 'stylesheet' href = 'style.css'/>
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-width: 320px;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.01rem;
+        line-height: 1.6;
+        color: black;
+        background-color: white;
+        text-align: center;
+    }
     
+    .container {
+        width: 90%;
+        margin: 0;
+    }
+    header {
+        text-align: center;
+        background-color: pink;
+    }
+    .header-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    hi {
+        color: darkcyan;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    ul li{
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        margin: 0 1rem;
+    }
+    a:hover {
+        color: white;
+    }
+    @media (min-width: 600px) {
+        .header-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+ </style>   
 </head> 
 <body>
     <header>
+        <div class = 'header-container container'></div>
+        
     <h1><p>  Hell hello!</p></h1> 
 </header>
+
 <main>
-    AAaaa 
+    <!--AAaaa -->
+    <nav>
+        <ul>
+            <li><a href = 'home.html'>Home</a></li>
+            <li><a href = 'about.html'>About</a></li>
+            <li><a href = 'contact.html'>Contact</a></li>
+        </ul>
+    </nav>
+    <p style="color:blue;background-color: aquamarine;">
+        Un
+    </p>
+    <p style="color:blueviolet;background-color:khaki;">
+        Dos
+    </p>
+    <p style="color:mediumvioletred;background-color:darkorange;">
+        Tres
+    </p>
+    <p style="color:brown;background-color:plum;">
+        Quatro
+    </p>
 </main>
     <script src="app.js"></script>
-<footer></footer>    
     <script>
         colorChange()
     </script>
     <p>
-    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="Cat!">-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="Cat!">
     <script>
         cats()
     </script>
     </p>
+    <footer>
+        <script>
+            let user;
+            let myFavcolor;
+            let color;
+            let catcolor;
+
+            alert('Hi!');
+
+            function userName() {
+                user = prompt('Your name?');
+                alert('Welcome ' + user + '!')
+                console.log(user)
+            }
+            
+            userName();
+
+            function favColor() {
+                color = prompt(user + ', what is your color?').toLowerCase();
+            while (color == '') {
+                color = prompt("C'mon, " + user + " what is your favorite color?").toLowerCase()
+            }if (color == 'red') {
+                myFavcolor = 'green'
+            } else if (color == 'blue') {
+                myFavcolor = 'orange'
+            } else {
+                myFavcolor = 'tomato'
+            }
+            alert('Nice, ' + user + ', ' + color + ' is a great color. My fav color is ' + myFavcolor + '!');
+            }
+
+            favColor()
+
+            function catColor() {
+                catcolor = prompt(user + ', ' + 'what is your favourite colour of a cat?')
+                while (catcolor == color) {
+                    alert('Do you know any other colors?')
+                    catcolor = prompt(user + ', ' + 'what is your favourite colour of a cat?');
+                } 
+                alert('In summary, ' + user + ':' + ' your favourite colour is ' + color + ',' + ' but for cats it is ' + catcolor + '. ' + 'Mine is ' + myFavcolor + '. ' + 'What can be better than a ' + myFavcolor + ' cat!')
+                
+                }
+            catColor()
+
+        </script>
+    </footer>
 </body>
 </html>

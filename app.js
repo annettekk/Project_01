@@ -18,7 +18,7 @@ let welMsg = alert('Welcome to this page, ' + userName + '!');
 document.write(userName);
 
 function extraMsg(userColor){
-    let msg = ', yellow is my favourite color too!'
+    let msg = ', AAAAa! Yellow is my favourite color too!'
     if (userColor == 'yellow') {
         return document.write(msg)
     }

@@ -51,11 +51,12 @@ function colorChange(){
     //}
 //}
 function cats(){
+    let cats = ['<img src = "images/superCat.jpg" alt="superCat">','<img src = "images/cat2.jpg" alt="cat2">' , '<img src = "images/cat3.jpg" alt="cat3">', '<img src = "images/cat4.jpg" alt="cat4">', '<img src = "images/cat5.jpg" alt="cat5">', '<img src = "images/cat6.jpg" alt="cat6">', '<img src = "images/cat7.jpg" alt="cat7">', '<img src = "images/cat8.jpg" alt="cat8">'];
     let output = '';
     let catCount = prompt("How many cats do you want?");
     let printedNumber = 1
     for (let i=0; i<catCount; i++) {
-        output = '<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="superCat">'
+        output = cats[i]
         document.write(output + printedNumber)
         printedNumber += 1
     }

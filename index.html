@@ -8,6 +8,9 @@
     <meta name = 'description' content="This is Anna's website"/>
     <link rel = 'stylesheet' href = 'reset.css'/>
     <link rel = 'stylesheet' href = 'style.css'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
  <style>
     *{
         padding: 0;
@@ -38,8 +41,8 @@
         display: flex;
         flex-direction: column;
     }
-    hi {
-        color: darkcyan;
+    h1 {
+        /* <-color: darkcyan; */
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -47,12 +50,14 @@
     ul li{
         display: inline-block;
     }
+
     a {
         text-decoration: none;
         margin: 0 1rem;
     }
     a:hover {
-        color: white;
+        color: rgb(22, 22, 22);
+        
     }
     @media (min-width: 600px) {
         .header-container {
@@ -65,21 +70,21 @@
         }
     }
  </style>   
+ <script src="https://kit.fontawesome.com/46a40e7c20.js" crossorigin="anonymous"></script>
 </head> 
 <body>
     <header>
-        <div class = 'header-container container'></div>
-        
-    <h1><p>  Hell hello!</p></h1> 
-</header>
-
+        <div class = 'header-container container'>
+            <h1 class="heading sticky">Hell hello!</h1> 
+        </div>
+    </header>
 <main>
     <!--AAaaa -->
     <nav>
         <ul>
-            <li><a href = 'home.html'>Home</a></li>
-            <li><a href = 'about.html'>About</a></li>
-            <li><a href = 'contact.html'>Contact</a></li>
+            <li><a href='home.html'><i class="fa-solid fa-house fa-bounce"></i></a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='contact.html'>Contact</a></li>
         </ul>
     </nav>
     <p style="color:blue;background-color: aquamarine;">
@@ -94,20 +99,25 @@
     <p style="color:brown;background-color:plum;">
         Quatro
     </p>
+<section>   
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, eum error? Eaque, excepturi, ratione animi a ipsa recusandae reprehenderit labore soluta aliquam veritatis voluptatibus iusto? Ullam asperiores eius aspernatur qui.
+</section>
+<aside>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, explicabo doloremque? Consequuntur possimus sed qui praesentium. Soluta explicabo nobis consectetur fugiat molestias eveniet. Dicta cum dolores optio non iste praesentium.
+</aside>
 </main>
     <script src="app.js"></script>
     <script>
         colorChange()
     </script>
-    <!--<p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRzvY7IfpAyTea5ScaZblBonRjA-mxc4zAg&usqp=CAU" alt="Cat!">
-    -->
+    
     <p><script>
-        cats()
+        cats()  
     </script>
     </p>
+    
     <footer>
-        <script>
+        <!--<script>
             let user;
             let myFavcolor;
             let color;
@@ -150,7 +160,9 @@
                 }
             catColor()
 
-        </script>
+        </script>-->
     </footer>
+    <!--<script src="app1.js"></script>-->
+    
 </body>
 </html>

@@ -1,9 +1,52 @@
-* { color:brown;}
+* { color:brown;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h1 {color: blueviolet;}
+:root {
+  --grn: #116A7B;
+  --pink: #FFAAC9;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  line-height: 1.6;}
+
+section {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #99DBF5;
+  color: rgb(128,70,116)
+}
+
+aside {
+  background-color: var(--pink);
+  min-height: 100px;
+}
+
+h1 {background-color: rgb(211, 43, 226); color: rgb(255,255,255);
+}
 
 p {
     padding: 10px;
     margin-left: 10px;
     
   }
+.heading {
+  color: white;
+}
+.about {
+color: var(--grn)
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+nav {
+  margin-top: 3rem;
+}
